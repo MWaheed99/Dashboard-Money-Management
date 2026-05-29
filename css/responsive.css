@@ -1,0 +1,117 @@
+@media (max-width: 1279px) {
+	.sidebar {
+		align-items: center;
+		padding: 30px 10px;
+	}
+	.sidebar span,
+	.sidebar .logo-text,
+	.sidebar h3 {
+		display: none;
+	}
+	.sidebar .logo-icon {
+		width: 45px;
+		height: 45px;
+		border-radius: 15px;
+		font-size: 16px;
+	}
+
+	.menu a {
+		justify-content: center;
+		padding: 10px 3px;
+		border-radius: 10px;
+	}
+	.content {
+		grid-template-columns: 1fr;
+	}
+
+
+	.content .cards {
+	width: 100%;
+	flex-direction: row;
+}
+	.content .card {
+	width: 100%;
+}
+
+.second-content {
+	grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+	gap: 15px;
+}
+
+.second-content .cards{
+	height: 100%;
+}
+
+	.second-content .card{
+		height: 100%;
+		width: 100%;
+	}
+
+
+}
+
+@media (max-width: 1023px) {
+	.stats .card .price {
+	font-size: 20px;
+}
+	.table-container{
+		width: 100%;
+		overflow-x: auto;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.dashboard,
+	.stats{
+		grid-template-columns: 1fr;
+	}
+	.sidebar {
+		display: none;
+	}
+
+	.content .cards {
+	width: 100%;
+	flex-direction: column;
+}
+	.content .card {
+	width: 100%;
+}
+
+.second-content {
+	grid-template-columns: 1fr;
+	gap: 15px;
+}
+}
+
+@media (max-width: 640px) {
+	.topbar {
+		flex-direction: column;
+		align-items: start;
+		gap: 20px;
+	}
+
+	.topbar .top-left {
+		flex-direction: column;
+		align-items: start;
+		gap: 20px;
+	}
+	.top-left .right {
+		order: 1;
+		width: 100%;
+		text-align: center;
+	}
+
+	.top-left .left {
+		width: 100%;
+		justify-content: space-between;
+	}
+	.user-card{
+		gap: 0
+	}
+
+	.user-info h4,
+	.user-info p {
+		display: none;
+	}
+}
